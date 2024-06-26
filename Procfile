@@ -1,1 +1,1 @@
-web: uvicorn laminate.main:app
+web: uvicorn src.laminate.main:app
