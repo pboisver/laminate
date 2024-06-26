@@ -10,6 +10,14 @@ packages = [{include = "laminate", from = "src"}]
 python = "^3.12"
 fastapi = "^0.111.0"
 
+[tool.poetry.group.dev.dependencies]
+poethepoet = "^0.26.1"
+
+[tool.poe.tasks]
+reqs = [
+    {shell = "poetry export --without-hashes   >requirements.txt"},
+    {shell = "echo '.' >>requirements.txt"}
+    ]
 
 [build-system]
 requires = ["poetry-core"]
