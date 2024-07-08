@@ -2,13 +2,14 @@
 name = "laminate"
 version = "0.1.0"
 description = ""
-authors = ["circleci <kgrid-developers@umich.edu>"]
+authors = ["Peter Boisvert <pboisver@umich.edu>"]
 readme = "README.md"
 packages = [{include = "laminate", from = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.12"
 fastapi = "^0.111.0"
+gunicorn = "^22.0.0"
 
 [tool.poetry.group.dev.dependencies]
 poethepoet = "^0.26.1"
